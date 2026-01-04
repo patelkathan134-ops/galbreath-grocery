@@ -31,9 +31,9 @@ const MENU_ITEMS: Record<string, Array<{ name: string; description: string; tag?
         { name: "Bologna Sandwich", description: "Classic sliced bologna with your choice of toppings.", image: "/images/bologna-sandwich.png" },
         { name: "Cajun Turkey", description: "Spicy Cajun turkey breast sliced thin.", image: "/images/turkey-sandwich.png" },
         { name: "Smoked Ham", description: "Hickory smoked ham piled high.", image: "/images/ham-sandwich.png" },
-        { name: "Chicken Salad", description: "House-made creamy chicken salad.", tag: "Fresh", image: "/images/cold-sandwich-white.png" },
-        { name: "Tuna Salad", description: "Classic tuna salad with celery and mayo.", image: "/images/cold-sandwich-white.png" },
-        { name: "BBQ Sandwich", description: "Pulled pork BBQ with slaw.", image: "/images/cold-sandwich-white.png" },
+        { name: "Chicken Salad", description: "House-made creamy chicken salad.", tag: "Fresh", image: "/images/chicken-salad.jpg" },
+        { name: "Tuna Salad", description: "Classic tuna salad with celery and mayo.", image: "/images/tuna-salad.png" },
+        { name: "BBQ Sandwich", description: "Pulled pork BBQ with slaw.", image: "/images/bbq-sandwich.jpg" },
     ],
     hot_sandwiches: [
         { name: "Fried Bologna", description: "Thick slice of bologna, fried until crisp.", image: "/images/hot-sandwich.png" },

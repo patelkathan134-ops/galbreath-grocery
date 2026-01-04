@@ -49,7 +49,7 @@ export const Footer = () => {
                                     </div>
                                     <div className="flex justify-between text-stone-300">
                                         <span>Sunday</span>
-                                        <span>8:00 AM - 8:30 PM</span>
+                                        <span>9:00 AM - 8:30 PM</span>
                                     </div>
                                 </div>
                             </div>

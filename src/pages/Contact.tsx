@@ -128,7 +128,7 @@ export default function Contact() {
                                     <div className="text-wood/70 grid grid-cols-2 gap-x-8 gap-y-1">
                                         <span>Mon - Fri</span><span>5:30am - 8:30pm</span>
                                         <span>Saturday</span><span>8am - 8:30pm</span>
-                                        <span>Sunday</span><span>8am - 8:30pm</span>
+                                        <span>Sunday</span><span>9am - 8:30pm</span>
                                     </div>
                                 </div>
                             </div>
