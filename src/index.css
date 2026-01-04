@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-forest: #2D5A27;
+  --color-forest-light: #3E7A36;
+  --color-forest-dark: #1E3D1A;
+
+  --color-cream: #FDFBF7;
+
+  --color-wood: #4B3621;
+  --color-wood-light: #6D4E30;
+
+  --color-orange: #E67E22;
+  --color-orange-hover: #D35400;
+
+  --color-charcoal: #333333;
+
+  --font-display: Outfit, Inter, system-ui, sans-serif;
+
+  --background-image-groceries: url('https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=2574&auto=format&fit=crop');
+}
+
+@layer base {
+  body {
+    @apply bg-cream text-charcoal antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display text-forest font-bold;
+  }
+}
