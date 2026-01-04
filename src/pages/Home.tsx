@@ -14,22 +14,22 @@ export default function Home() {
                     className="absolute inset-0 bg-groceries bg-cover bg-center"
                     aria-hidden="true"
                 >
-                    <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]" />
+                    <div className="absolute inset-0 bg-black/60 backdrop-blur-[3px]" />
                 </div>
 
                 {/* Hero Content */}
                 <div className="container mx-auto px-4 md:px-6 relative z-10">
-                    <Card variant="glass" className="max-w-2xl mx-auto text-center p-8 md:p-12 border-white/20">
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-md">
+                    <Card className="max-w-2xl mx-auto text-center p-8 md:p-12 border-white/10 bg-black/40 backdrop-blur-md shadow-2xl">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-xl">
                             Freshness From Our Family to Yours
                         </h1>
-                        <p className="text-lg md:text-xl text-stone-100 mb-8 max-w-lg mx-auto leading-relaxed">
+                        <p className="text-lg md:text-xl text-white/90 mb-8 max-w-lg mx-auto leading-relaxed font-medium drop-shadow-md">
                             Serving the Goodlettsville community with premium local produce, quality meats, and everyday essentials since 1952.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
 
                             <Link to="/deli">
-                                <Button size="lg" variant="secondary" className="w-full sm:w-auto shadow-lg hover:shadow-xl hover:scale-105 transition-all">
+                                <Button size="lg" variant="primary" className="w-full sm:w-auto shadow-lg hover:shadow-xl hover:scale-105 transition-all text-lg px-8 py-6 bg-orange hover:bg-orange/90 text-white border-none">
                                     Order from Deli
                                 </Button>
                             </Link>
