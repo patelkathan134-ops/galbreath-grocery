@@ -24,7 +24,7 @@ export default function Home() {
                             Freshness From Our Family to Yours
                         </h1>
                         <p className="text-lg md:text-xl text-white/90 mb-8 max-w-lg mx-auto leading-relaxed font-medium drop-shadow-md">
-                            Serving the Goodlettsville community with premium local produce, quality meats, and everyday essentials since 1952.
+                            Serving the Goodlettsville community with premium local produce, quality meats, and everyday essentials since 1941.
                         </p>
 
                     </Card>
@@ -92,7 +92,7 @@ export default function Home() {
                     </div>
                     <div className="order-1 lg:order-2 space-y-6">
                         <div className="inline-block px-4 py-1.5 bg-orange/10 text-orange font-semibold rounded-full text-sm tracking-wide">
-                            LOCALLY OWNED SINCE 1952
+                            LOCALLY OWNED SINCE 1941
                         </div>
                         <h2 className="text-3xl md:text-4xl font-bold text-forest">
                             A Goodlettsville Tradition

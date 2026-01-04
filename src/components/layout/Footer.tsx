@@ -76,7 +76,7 @@ export const Footer = () => {
 
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-stone-400 text-sm">
-                        © {new Date().getFullYear()} Galbreath Grocery. Family Owned Since 1952.
+                        © {new Date().getFullYear()} Galbreath Grocery. Family Owned Since 1941.
                     </p>
                     <div className="flex gap-4">
                         <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-orange transition-colors text-white">
