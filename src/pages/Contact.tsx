@@ -21,7 +21,7 @@ export default function Contact() {
                     Accept: "application/json",
                 },
                 body: JSON.stringify({
-                    access_key: "YOUR_ACCESS_KEY_HERE", // User to replace this
+                    access_key: "81f82441-81d2-4ffd-ac36-2d3959bc8d96",
                     ...formState,
                     subject: "New Message from Galbreath Grocery Website",
                 }),
