@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://galbreath-grocery.vercel.app/sitemap.xml
