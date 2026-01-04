@@ -7,11 +7,36 @@ import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
 export default function Contact() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
     const [isSent, setIsSent] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        setIsSent(true);
-        // Simulate form submission
+        setIsSubmitting(true);
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                body: JSON.stringify({
+                    access_key: "YOUR_ACCESS_KEY_HERE", // User to replace this
+                    ...formState,
+                    subject: "New Message from Galbreath Grocery Website",
+                }),
+            });
+
+            const result = await response.json();
+            if (result.success) {
+                setIsSent(true);
+                setFormState({ name: '', email: '', message: '' });
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -70,8 +95,8 @@ export default function Contact() {
                                         onChange={(e) => setFormState({ ...formState, message: e.target.value })}
                                     />
                                 </div>
-                                <Button type="submit" size="lg" className="w-full">
-                                    Send Message
+                                <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
+                                    {isSubmitting ? 'Sending...' : 'Send Message'}
                                 </Button>
                             </form>
                         )}
